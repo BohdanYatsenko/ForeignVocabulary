@@ -12,19 +12,20 @@ public class VocabularyOnList implements Vocabulary {
     /*FIXME*/
     public static void main(String[] args) {
         Vocabulary a = new VocabularyOnList();
+        System.out.println(a.getVocabulary());
         a.addWord("add", "додати");
         a.addWord("add", "додати");
         a.addWord("add", "додати");
         a.save("vcb");
         System.out.println(a.load("vcb"));
-        System.out.println(a.getWord());
+        System.out.println(a.getVocabulary());
     }
 
-    VocabularyOnList() {
+    public VocabularyOnList() {
         vocabulary = new ArrayList<>();
     }
 
-    VocabularyOnList(List<Word> vocabulary) {
+    public VocabularyOnList(List<Word> vocabulary) {
         this.vocabulary = vocabulary;
     }
 
@@ -116,6 +117,12 @@ public class VocabularyOnList implements Vocabulary {
         return vocabulary.get(random.nextInt(vocabulary.size()));
     }
 
+    /**
+     * Checks is the specified word has not any of its parts.
+     *
+     * @param word a pair word and its translation
+     * @return true if word has not word or translation or both
+     */
     private boolean isWordEmpty(Word word) {
         if (word != null) {
             if ((word.getLearn() != null) && (word.getKnow() != null)) {

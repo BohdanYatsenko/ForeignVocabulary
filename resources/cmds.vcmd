@@ -1,0 +1,17 @@
+-help=0
+-vcb=1
+-a=12
+-rm=13
+-clr=14
+-s=15
+-o=17
+-test=2
+-sfl=21
+-loop=23
+-non=24
+-end=26
+-last=3
+-words=4
+-exit=-1
+-n=1000
+-f=1001

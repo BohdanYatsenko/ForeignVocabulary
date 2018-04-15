@@ -29,7 +29,7 @@ public interface Vocabulary {
     Word getWord();
 
     /**
-     * Provides to collect all {@link Word}s from the vocabulary
+     * Prints all words from the current vocabulary.
      *
      * @return {@code List<Word>}
      */

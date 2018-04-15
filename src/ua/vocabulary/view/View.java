@@ -13,13 +13,17 @@ public interface View {
     void showCommands();
 
     /**
-     * Asks for translations of words from vocabulary
+     * Current answer from controller.
      */
-    void startTesting();
-
+    void showProcess(String... args);
     /**
      * Return user's score for the last test.
      */
-    void showResults();
+    void showResults(String score);
+
+    /**
+     * Gets data from command line and should redirect it to controller layer.
+     */
+    String readCommandLine();
 
 }
