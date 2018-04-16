@@ -44,7 +44,7 @@ public interface Commands {
     String TEST = "-test";
     String T_SHUFFLED = "-sfl";
     String T_NATURAL = "-n";
-    String T_REPATEDLY = "-loop";
+    String T_REPEATEDLY = "-loop";
     String T_NON_SCORE = "-non";
     String T_FILE = "-f";
     String T_STOP = "-end";

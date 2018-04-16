@@ -24,6 +24,7 @@ hs_err_pid*
 #directories
 bin/
 .idea/
+out/
 
 #IDE files
 *.iml
